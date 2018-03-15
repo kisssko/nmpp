@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>nmpp: SIG_CreateResample</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">nmpp
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Поиск');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">SIG_CreateResample<div class="ingroups"><a class="el" href="group___s_i_g___group.html">Функции обработки сигналов</a> &raquo; <a class="el" href="group__s_resample.html">Изменение размеров</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Создание ядра для функции передискретизации SIG_Resample().Функции выделяют память и инициализируют таблицы весовых коэффициентов для использования в функциях передискретизации.  
+<a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:gae3d9404d4f300fd43b03f10f71c69552"><td class="memItemLeft" align="right" valign="top"><a id="gae3d9404d4f300fd43b03f10f71c69552"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SIG_CreateResampleUp3Down2_8s16s</b> (<a class="el" href="group__nmvectype.html#ga4e59c2dc9731ba8592b0991bf71c7af3">nm64s</a> **pKernel, int nHint=MEM_LOCAL)</td></tr>
+<tr class="separator:gae3d9404d4f300fd43b03f10f71c69552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6471742ba5acbe0938b32991ced63df5"><td class="memItemLeft" align="right" valign="top"><a id="ga6471742ba5acbe0938b32991ced63df5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SIG_CreateResampleDown2_8u8u</b> (<a class="el" href="group__nmvectype.html#ga4e59c2dc9731ba8592b0991bf71c7af3">nm64s</a> **pKernel, int nHint=MEM_LOCAL)</td></tr>
+<tr class="separator:ga6471742ba5acbe0938b32991ced63df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22cf55da076eda78772e52e35db2cc90"><td class="memItemLeft" align="right" valign="top"><a id="ga22cf55da076eda78772e52e35db2cc90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SIG_CreateResampleDown2_16u16u</b> (<a class="el" href="group__nmvectype.html#ga4e59c2dc9731ba8592b0991bf71c7af3">nm64s</a> **pKernel, int nHint=MEM_LOCAL)</td></tr>
+<tr class="separator:ga22cf55da076eda78772e52e35db2cc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<p>Создание ядра для функции передискретизации SIG_Resample().</p>
+<p>Функции выделяют память и инициализируют таблицы весовых коэффициентов для использования в функциях передискретизации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nHint</td><td>Определяет память(Local или Global) в которой создается служебная структура. nHint=[MEM_LOCAL,MEM_GLOBAL].</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">pKernel</td><td>Указатель на служебную структуру, содержащую весовые коэффиценты фильтра во внутреннем формате.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>Используется перед вызовом функции SIG_Filter. </dd></dl>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по nmpp. Последние изменения: Чт 15 Мар 2018 23:23:12. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

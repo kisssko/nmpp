@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>nmpp: IMG_MergeFromBlocks</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">nmpp
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Поиск');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">IMG_MergeFromBlocks<div class="ingroups"><a class="el" href="group___i_m_g___group.html">Функции обработки изображений</a> &raquo; <a class="el" href="group__i_reodering.html">Переупорядочивание изображений</a> &raquo; <a class="el" href="group__i_block_reodering.html">Блочное переупорядочивание</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Объединяет последовательность квадратных блоков в изображение.  
+<a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:gac86f5386a2bc29ecf026a089a6e573f6"><td class="memItemLeft" align="right" valign="top"><a id="gac86f5386a2bc29ecf026a089a6e573f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IMG_MergeFromBlocks8x8</b> (<a class="el" href="group__nmvectype.html#ga0b5a4182e80e797c3a7589069b9fc2e4">nm8s</a> *pSrcBlockSeq, <a class="el" href="group__nmvectype.html#ga0b5a4182e80e797c3a7589069b9fc2e4">nm8s</a> *pDstImg, int nWidth, int nHeight)</td></tr>
+<tr class="separator:gac86f5386a2bc29ecf026a089a6e573f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<p>Объединяет последовательность квадратных блоков в изображение. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pSrcBlockSeq</td><td>Входная последовательность блоков . Результирующее изображение Ширина исходного изображения в пикселах. nWidth=[8,16,24...] Высота исходного изображения в пикселах. nHeight=[8,16,24..] Входная последовательность блоков имеет вид</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">                [A00|A01|A02|...|A06|A07|A20|A21|...|A77|B00|B01|B02|...|B07|B10|...|H77|
+                [I00|I01|I02|...|I06|I07]I10|I11|...|I77|J00|J01|J02|...............|Z77|</pre><p> Результирующее изображение имеет вид</p>
+<pre class="fragment">                [A00|A01|A02|A03|A04|A05|A06|A07|B00|B01|..|B07|C00|....H07]
+                [A10|A11|A12|A13|A14|A15|A16|A17|B10|B11|..|B17|C10|....H17]
+                [A20|A21|A22|A23|A24|A25|A26|A27|B20|B21|..|B27|C20|....H27]
+                [A30|A31|A32|A33|A34|A35|A36|A37|B30|B31|..|B37|C30|....H37]
+                ............................................................
+                [A70|A71|A72|A73|A74|A75|A76|A77|B70|B71|..|B77|C70|....H77]
+                ............................................................
+                [I00|I01|I02|I03|I04|I05|I06|I07|J00|J01|..................]
+                [I10|I11|I12|I13|I14|I15|I16|I17|J00|I09|...................
+                ........................................................Z77]</pre><dl class="section user"><dt></dt><dd> </dd></dl>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по nmpp. Последние изменения: Чт 15 Мар 2018 23:23:12. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
